@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Page</title>
+</head>
+<body>
+    <h1>Profile Page </h1>
+    <h3>Profile Page </h3>
+    <table>
+         <tbody>
+           <tr><td>Name</td><td> <%= user.name %></td></tr>
+           <tr><td>class</td><td> <%= user.class %></td></tr>
+           <tr><td>year</td><td> <%= user.year %></td></tr>
+           <tr><td>subjects</td><td> <% user.subjects.forEach((elem)=>{ %>
+            <li><%= elem %></li>
+            <%  }) %></td></tr>
+        </tbody>
+      </table>
+      
+   
+</body>
+</html>
