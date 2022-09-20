@@ -4,6 +4,8 @@
     <title>Profile Page</title>
 </head>
 <body>
+    
+    <%- include('common/header'); %>
     <h1>Profile Page </h1>
     <h3>Profile Page </h3>
     <table>
@@ -16,6 +18,12 @@
             <%  }) %></td></tr>
         </tbody>
       </table>
+      <table>
+        <tbody>
+          <tr><td>Name</td><td> <%= user1.name %></td></tr>
+          <tr><td>class</td><td> <%= user1.class %></td></tr>
+       </tbody>
+     </table>
       
    
 </body>
